@@ -71,3 +71,8 @@ cnames
 ## Tidy data 2
 data_agg <- ddply(data, .(subject, activity), numcolwise(mean))
 str(data_agg)
+
+
+## Save tidy datasets
+write.table(data, "tidydata1.txt", row.names = FALSE)
+write.table(data_agg, "tidydata2.txt", row.names = FALSE)
