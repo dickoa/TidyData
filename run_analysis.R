@@ -59,20 +59,27 @@ meas <- grep("mean\\(|std\\(", names(data), value = TRUE)
 data <- data[, c("subject", "y", meas)]
 str(data)
 
-## Tidy data 1
+## Merge the data and label
 data <- join(data, label)
 data <- data[, c("subject", "activity", meas)]
 str(data)
 
 cnames <- names(data)[-(1:2)]
-gsub("\\-|\\(|\\)", "", cnames)
-cnames
+cnames <- gsub("\\-|\\(|\\)", "", cnames) ## remove parenthesis
+cnames <- gsub("^t", "TimeDomain", cnames) ## replace "t" by "TimeDomain"
+cnames <- gsub("^f", "FreqDomain", cnames) ## replace "f" by "FreqDomain"
+cnames <- gsub("Gyro", "Gyroscope", cnames) ## replace "Gyro" by "Gyroscope"
+cnames <- gsub("Acc", "Accelerometer", cnames) ## replace "Acc" by "Accelerometer"
+cnames <- gsub("Mag", "Magnitude", cnames) ## replace "Mag" by "Magnitude"
+cnames <- gsub("BodyBody", "Body", cnames) ## Remove duplicate Body
+cnames <- gsub("(.+)(std|mean)(X$|Y$|Z$)", "\\1\\3\\2", cnames) ## Put std or mean at the end
+cnames <- gsub("std", "Std", cnames) ## Replace std by Std
+cnames <- gsub("mean", "Mean", cnames) ## Replace mean by Mean
+names(data)[-(1:2)] <- cnames
 
-## Tidy data 2
+## Create the final aggregated data sets
 data_agg <- ddply(data, .(subject, activity), numcolwise(mean))
 str(data_agg)
 
-
 ## Save tidy datasets
-write.table(data, "tidydata1.txt", row.names = FALSE)
-write.table(data_agg, "tidydata2.txt", row.names = FALSE)
+write.table(data_agg, "tidydata.txt", row.names = FALSE)
