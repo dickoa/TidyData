@@ -34,5 +34,5 @@ install_github("hadley/magrittr")
 # Submitted tidy data set
 
 The final data submitted is a tabulated separated file (`tsv`) (A tsv file is text file with columns separated by a tabulation).
-A (codebook)[<https://github.com/dickoa/TidyData/blob/master/CodeBook.md>] (`Codebook.md`) is available and give a brief description of the tidy
+A [codebook](https://github.com/dickoa/TidyData/blob/master/CodeBook.md) (`Codebook.md`) is available and give a brief description of the tidy
 data set columns.
