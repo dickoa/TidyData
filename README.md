@@ -31,7 +31,7 @@ install_github("smbache/magrittr")
 
 # Submitted tidy data set
 
-The final data submitted is a tabulated separated file (`tidata.tsv`). 
+The final data submitted is a tabulated separated file (`tidydata.tsv`). 
 The data are columns separated by tabulation (`\t`) and you can read it in R by using `read.table` this way :
 
 ```R
