@@ -26,7 +26,7 @@ You will need the latest version of the `dplyr` and `magrittr` packages to run t
 ```R
 library(devtools)
 install_github("hadley/dplyr")
-install_github("hadley/magrittr")
+install_github("smbache/magrittr")
 ```
 
 # Submitted tidy data set
