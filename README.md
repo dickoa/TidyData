@@ -31,6 +31,11 @@ install_github("smbache/magrittr")
 
 # Submitted tidy data set
 
-The final data submitted is a tabulated separated file (`tidata.tsv`) (data columns separated by tabulation).
-A [codebook](https://github.com/dickoa/TidyData/blob/master/CodeBook.md) (`CodeBook.md`) is available and give a brief description of the tidy
-data set columns.
+The final data submitted is a tabulated separated file (`tidata.tsv`). 
+The data are columns separated by tabulation (`\t`) and you can read it in R by using `read.table` this way :
+
+```R
+tidydata <- read.table("tidydata.tsv", sep = "\t", header = TRUE)
+```
+
+A [codebook](https://github.com/dickoa/TidyData/blob/master/CodeBook.md) (`CodeBook.md`) is available and give a brief description of the tidy data set columns.

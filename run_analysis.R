@@ -77,7 +77,7 @@ data_agg <- data %>%
         summarise_each(funs(mean))
 
 ## Save the tidy datasets
-write.table(data_agg, "tidydata.tsv", row.names = FALSE)
+write.table(data_agg, "tidydata.tsv", row.names = FALSE, sep = "\t")
 
 
 
