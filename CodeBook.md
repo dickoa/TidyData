@@ -51,7 +51,7 @@
 <td class="left">numeric</td>
 <td class="left">&#xa0;</td>
 <td class="left">-1 to 1</td>
-<td class="left">Mean Body linear acceleration along X direction in the time domain</td>
+<td class="left">Mean Body linear acceleration along X in the time domain</td>
 </tr>
 
 
