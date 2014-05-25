@@ -1,5 +1,5 @@
 
-# Codebook
+# Code book
 
 
 
@@ -32,7 +32,7 @@
 <tr>
 <td class="left">activity</td>
 <td class="left">character</td>
-<td class="left">Subject's activity (WALKING, WALKING<sub>UPSTAIRS</sub>, WALKING<sub>DOWNSTAIRS</sub>, SITTING, STANDING, LAYING)</td>
+<td class="left">Subject's activity</td>
 </tr>
 
 
