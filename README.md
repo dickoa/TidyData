@@ -2,9 +2,7 @@
 # Goal
 
 This is the second project for the Getting and Cleaning data science from Coursera.
-
 The purpose of this project is to demonstrate our ability to collect, work with, and clean a data set. 
-
 The goal is to prepare tidy data that can be easily used for further analysis. 
 
 # Data source
@@ -33,7 +31,6 @@ install_github("hadley/magrittr")
 
 # Submitted tidy data set
 
-The final data submitted is a tabulated separated file (`tsv`) (A tsv file is text file with columns separated by a tabulation).
-
+The final data submitted is a tabulated separated file (`tidata.tsv`) (columns separated by tabulation).
 A [codebook](https://github.com/dickoa/TidyData/blob/master/CodeBook.md) (`CodeBook.md`) is available and give a brief description of the tidy
 data set columns.
