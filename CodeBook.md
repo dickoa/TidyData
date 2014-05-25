@@ -25,14 +25,14 @@
 <tr>
 <td class="left">subject</td>
 <td class="left">integer</td>
-<td class="left">Subject id</td>
+<td class="left">Subject's id</td>
 </tr>
 
 
 <tr>
 <td class="left">activity</td>
 <td class="left">character</td>
-<td class="left">Subject's activity (`WALKING`, `WALKING_UPSTAIRS`, `WALKING_DOWNSTAIRS`, `SITTING`, `STANDING`, `LAYING`)</td>
+<td class="left">Activity performed by subject (walking, laying, etc.)</td>
 </tr>
 
 
